@@ -1,0 +1,29 @@
+{
+    "generatedAt":  "2026-11-01T16:46:48.8043223+08:00",
+    "minecraftVersion":  "1.8.9",
+    "featherPatchedJar":  {
+                              "source":  "bundled in payload",
+                              "sha256":  "b7e9a904cbf9185609f41620d2c2d835f1f7fc61db39fdf5cdba49d0893af4b7"
+                          },
+    "officialFeatherJar":  {
+                               "url":  "https://builds-cf.feathercdn.net/release/1782267228/feather-1.8.9.jar",
+                               "sha1":  "cfdf5396e74391dd83cd23e25c8e567f503396d8",
+                               "note":  "Unpatched 1.8.9 base. Replaced by the bundled patched jar."
+                           },
+    "featherAssetIndex":  {
+                              "url":  "https://assets.feathercdn.net/feather_assets_index.json"
+                          },
+    "mojangAssetIndex":  {
+                             "url":  "https://launchermeta.mojang.com/v1/packages/f6ad102bcaa53b1a58358f16e376d548d44933ec/1.8.json",
+                             "sha1":  "f6ad102bcaa53b1a58358f16e376d548d44933ec"
+                         },
+    "cef103":  {
+                   "url":  "https://libs.feathercdn.net/cef_binary-103.0.0+geeea43e-windows64.jar",
+                   "sha1":  "0629243c811b54e5abaa33f7579b987bd9b3b7ad"
+               },
+    "node":  {
+                 "version":  "22.20.0",
+                 "url":  "https://nodejs.org/dist/v22.20.0/node-v22.20.0-win-x64.zip",
+                 "nodeExeSha256":  "fdddbf4581e046b8102815d56208d6a248950bb554570b81519a8a5dacfee95d"
+             }
+}

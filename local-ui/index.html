@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <title>Feather Reborn</title>
+  <link rel="stylesheet" href="fonts/harmony/Regular.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="window">
+    <aside id="rail">
+      <button id="editHud" class="rail-edit" data-i18n-title="editHud.title" title="编辑 HUD">
+        <img src="feather-logo.png" alt="Feather">
+      </button>
+      <nav id="railNav">
+        <button class="rail-item active" data-page="mods" data-i18n-title="nav.mods" title="模组">
+          <span class="rail-icon"><span class="ms fill">widgets</span></span>
+          <span class="rail-label" data-i18n="nav.mods">模组</span>
+        </button>
+        <button class="rail-item" data-page="clickgui" data-i18n-title="nav.clickgui" title="ClickGUI">
+          <span class="rail-icon"><span class="ms">tune</span></span>
+          <span class="rail-label" data-i18n="nav.clickgui">ClickGUI</span>
+        </button>
+        <button class="rail-item" data-page="settings" data-i18n-title="nav.settings" title="设置">
+          <span class="rail-icon"><span class="ms">settings</span></span>
+          <span class="rail-label" data-i18n="nav.settings">设置</span>
+        </button>
+      </nav>
+      <button id="closeUi" class="rail-item rail-close" data-i18n-title="nav.close" title="关闭">
+        <span class="rail-icon"><span class="ms">power_settings_new</span></span>
+        <span class="rail-label" data-i18n="nav.close">关闭</span>
+      </button>
+    </aside>
+
+    <section id="content">
+      <header id="titlebar">
+        <div class="title">
+          <span class="title-mark">F</span>
+          <span>FEATHER <b>REBORN</b></span>
+        </div>
+        <label class="search">
+          <span class="ms">search</span>
+          <input id="search" data-i18n-placeholder="search.placeholder" placeholder="搜索模组或设置" autocomplete="off" spellcheck="false">
+        </label>
+        <button id="closeUi2" class="icon-btn" data-i18n-title="nav.close" title="关闭">
+          <span class="ms">close</span>
+        </button>
+      </header>
+      <div id="statusbar"><span id="status">正在读取本地配置...</span></div>
+
+      <main id="pages">
+        <section id="page-mods" class="page active">
+          <div id="modsGrid" class="mods-grid"></div>
+        </section>
+
+        <section id="page-clickgui" class="page">
+          <div class="page-title"><h2 data-i18n="clickgui.title">ClickGUI 设置</h2></div>
+          <div class="page-note" data-i18n="clickgui.note">这些设置只影响 ClickGUI 本身，不会写入 Feather 配置。</div>
+          <div id="clickguiList" class="settings-list"></div>
+        </section>
+
+        <section id="page-settings" class="page">
+          <div class="page-title"><h2 data-i18n="settings.title">设置</h2></div>
+          <div id="settingsList" class="settings-list"></div>
+        </section>
+
+        <section id="page-search" class="page">
+          <div class="page-title"><h2 data-i18n="search.results">搜索结果</h2></div>
+          <div id="searchResults" class="settings-list"></div>
+        </section>
+
+        <section id="moduleDetail" class="detail">
+          <div class="detail-head">
+            <button id="detailBack" class="icon-btn" data-i18n-title="detail.back" title="返回">
+              <span class="ms">arrow_back</span>
+            </button>
+            <div class="detail-title">
+              <h2 id="detailTitle"></h2>
+              <div id="detailId" class="sub"></div>
+            </div>
+            <label class="switch" data-i18n-title="detail.enable" title="启用模组">
+              <input id="detailEnabled" type="checkbox">
+              <span class="track"></span>
+            </label>
+          </div>
+          <div id="detailSettings" class="settings-list"></div>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <div id="editorBar" hidden>
+    <span class="ms">drag_indicator</span>
+    <span class="edit-hint" data-i18n="editor.hint">拖动 HUD · 滚轮缩放</span>
+    <button id="finishHudEdit" class="pill primary"><span data-i18n="editor.done">完成</span> <kbd>Esc</kbd></button>
+  </div>
+  <button id="reopenUi" hidden data-i18n="editor.openSettings">打开设置</button>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+54490ec5f8012a19edb6d78ea6231645bd023b4f6fe1432e98efc40251ab134d  FeatherReborn-Payload.zip
+d21f45dfd1faa8419dfd2f9535e5d56d56789a50321c22e30ef8b7881c4b2f26  FeatherReborn-Setup.exe

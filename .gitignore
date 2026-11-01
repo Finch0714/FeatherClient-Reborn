@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+installer/build/
+installer/downloads/
+installer/tools/
+installer/publish/
+installer/launcher-obj/
+installer/dist/FeatherReborn-Payload.zip
+*.user
+*.suo
+.vs/
+.DS_Store
+Thumbs.db

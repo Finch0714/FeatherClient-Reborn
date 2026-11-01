@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>FeatherRebornLauncher</AssemblyName>
+    <RootNamespace>FeatherRebornLauncher</RootNamespace>
+    <ApplicationIcon>Assets\feather.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="Assets\feather_icon.png" />
+    <Resource Include="Assets\feather_logo.png" />
+    <Resource Include="Assets\feather_watermark.png" />
+    <Resource Include="Assets\feather.ico" />
+  </ItemGroup>
+</Project>

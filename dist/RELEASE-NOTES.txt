@@ -1,0 +1,43 @@
+Feather Reborn 1.8.9 发布包
+================================
+
+文件说明
+--------
+FeatherReborn-Setup.exe
+  小型安装器。上传到任何地方都可以，体积约几十 KB。
+
+FeatherReborn-Payload.zip
+  完整离线运行数据。必须上传到网盘，大小约 671.7 MB。
+  安装后不需要再联网下载游戏资源。
+
+SHA256SUMS.txt
+  两个文件的 SHA-256 校验值。
+
+发布步骤
+--------
+1. 把 FeatherReborn-Payload.zip 上传到网盘，并设置为允许下载。
+2. 发布 FeatherReborn-Setup.exe，同时在下载说明中提供数据包地址。
+3. 用户先下载数据包，再运行安装器，在“安装数据”处选择该 zip。
+4. 如果网盘支持直链，可在安装器旁边放一个 payload.url 文件，
+   第一行填写数据包直链，安装器会自动下载。百度网盘这类需要客户端的链接不算直链。
+
+安装器行为
+----------
+- 默认安装到 %LOCALAPPDATA%\FeatherReborn
+- 不需要管理员权限
+- 创建桌面和开始菜单快捷方式
+- 写入当前用户的卸载项
+- 重复安装会保留已有存档、设置、截图和日志
+- 卸载会删除整个安装目录，包括存档
+
+包含内容
+--------
+- Minecraft 1.8.9 + Forge 11.15.1.2318
+- Feather 1.8.9 本地补丁版
+- Java 8 运行时
+- Node.js 22.20.0（仅运行本地 UI 服务）
+- Soar 风格本地 ClickGUI、HUD 编辑器、Feather 模组设置
+- 账号切换、TokenAuth、InputFix、OptiFine
+
+数据包解压后约 1.06 GB。
+官方 Feather 1.8.9 jar 仍可下载，但它是未打补丁版本；本包改用已修复的本地 jar。
