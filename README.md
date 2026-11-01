@@ -94,3 +94,10 @@ dotnet build .\installer\FeatherReborn.Setup\FeatherReborn.Setup.csproj -c Relea
 
 Feather Client、Minecraft 资源及第三方模组的再分发条款需要自行确认。
 本项目不是 Feather 官方项目。
+
+## Contributors
+
+- Finch0714 - project owner and maintainer
+- Codex (OpenAI) - development assistant: launcher, local UI, installer, packaging, and release automation
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md).
